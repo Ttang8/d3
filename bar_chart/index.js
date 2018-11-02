@@ -20,3 +20,9 @@ let barChart = svg.selectAll("rect")
       let translate = [barWidth * i, 0];
       return `translate(${translate})`;
     });
+
+let text = svg.selectAll('text')
+    .data(dataset)
+    .enter()
+    .append('text')
+    
